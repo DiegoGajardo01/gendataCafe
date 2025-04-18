@@ -3,20 +3,20 @@ import random
 # Definición de tipos de café y sus características
 tipos_cafe = {
     "Arabica": {
-        "descripcion": "La variedad mas cultivada y apreciada a nivel mundial, con un sabor suave, dulce y notas afrutadas o florales. Ideal para quienes prefieren un cafe mas delicado y aromatico.",
-        "origen": ["Colombia", "Etiopia", "Brasil"],
+        "descripcion": "La variedad mas cultivada en el mundo, con un sabor suave y dulce.",
+        "origen": ["Colombia", "Etiopia", "Brasil"]
     },
     "Robusta": {
-        "descripcion": "Con un sabor fuerte, terroso y amargo, esta variedad contiene el doble de cafeina que el Arabica. Es ideal para quienes buscan un cafe mas intenso y con cuerpo.",
-        "origen": ["Vietnam", "Brasil", "Indonesia"],
+        "descripcion": "Mas fuerte y amargo, con un alto contenido de cafeina.",
+        "origen": ["Vietnam", "Brasil", "Indonesia"]
     },
     "Excelsa": {
-        "descripcion": "Una variedad exotica con un perfil de sabor complejo, que combina notas frutales, acidas y especiadas. Aporta profundidad y caracter a mezclas especiales.",
-        "origen": ["Vietnam", "Indonesia"],
+        "descripcion": "Una de las variedades de cafe, con un perfil de sabor unico.",
+        "origen": ["Vietnam", "Indonesia"]
     },
     "Liberica": {
-        "descripcion": "Poco comun y con granos de forma irregular, esta variedad se destaca por su sabor unico, con matices florales, ahumados y a veces lenosos. Muy apreciada por su rareza.",
-        "origen": ["Filipinas", "Malasia"],
+        "descripcion": "Una de las variedades de cafe, menos comun pero con un sabor distintivo.",
+        "origen": ["Filipinas", "Malasia"]
     }
 }
 
@@ -27,17 +27,14 @@ niveles_tueste = ['Claro', 'Medio', 'Oscuro']
 notas_aroma = ['Frutales', 'Floral', 'Terroso', 'Especiadas', 'Avinado']
 notas_sabor = ['Nuez/chocolate', 'Dulces', 'Salados', 'Acidos', 'Amargos']
 
-# Rango de precios base por kilogramo (en CLP)
-precio_base_kg = random.randint(64000, 88000)  # 16,000 a 22,000 CLP por 250g
-
 # Generar tipos de café
 tipos_cafe_generados = []
-for _ in range(15):
+for _ in range(10):
     tipo = random.choice(list(tipos_cafe.keys()))
     origen = random.choice(tipos_cafe[tipo]['origen'])
     nivel_tueste = random.choice(niveles_tueste)
     notas_cata = random.sample(notas_aroma, 2) + random.sample(notas_sabor, 2)  # Elegir 2 de cada
-    precio = round(precio_base_kg / 1000, 2)  # Convertir a precio por kg
+    precio = round(random.uniform(64000, 88000) / 1000, 2)  # Precio base por kg entre 64,000 y 88,000 CLP
 
     cafe = {
         'nombre': tipo,
@@ -46,7 +43,8 @@ for _ in range(15):
         'nivel_tueste': nivel_tueste,
         'notas_cata': ', '.join(notas_cata),
         'precio_base_kg': precio,
-        'disponible': True
+        'disponible': True,  # Asumimos que todos están disponibles
+        'temporadas': tipos_cafe[tipo]['temporadas']  # Añadir temporadas
     }
     tipos_cafe_generados.append(cafe)
 
