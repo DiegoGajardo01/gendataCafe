@@ -1,0 +1,16 @@
+INSERT INTO cafe_origen (id_tipo_cafe, pais) VALUES
+(1, 'Vietnam'),
+(2, 'Indonesia'),
+(3, 'Colombia'),
+(4, 'Brasil'),
+(5, 'Indonesia'),
+(6, 'Colombia'),
+(7, 'Malasia'),
+(8, 'Vietnam'),
+(9, 'Brasil'),
+(10, 'Indonesia'),
+(11, 'Colombia'),
+(12, 'Indonesia'),
+(13, 'Colombia'),
+(14, 'Brasil'),
+(15, 'Colombia');

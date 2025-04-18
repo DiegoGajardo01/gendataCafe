@@ -1,0 +1,16 @@
+INSERT INTO tipos_cafe (nombre, descripcion, nivel_tueste, notas_cata, precio_base_kg, disponible) VALUES
+('Excelsa', 'Una de las variedades de cafe, con un perfil de sabor unico.', 'Claro', 'Floral, Terroso, Nuez/chocolate, Amargos', 86.09, False),
+('Excelsa', 'Una de las variedades de cafe, con un perfil de sabor unico.', 'Claro', 'Avinado, Terroso, Dulces, Nuez/chocolate', 80.74, False),
+('Arabica', 'La variedad mas cultivada en el mundo, con un sabor suave y dulce.', 'Claro', 'Frutales, Floral, Dulces, Nuez/chocolate', 70.96, True),
+('Arabica', 'La variedad mas cultivada en el mundo, con un sabor suave y dulce.', 'Medio', 'Floral, Avinado, Nuez/chocolate, Acidos', 74.35, True),
+('Robusta', 'Mas fuerte y amargo, con un alto contenido de cafeina.', 'Claro', 'Especiadas, Terroso, Salados, Nuez/chocolate', 74.27, False),
+('Arabica', 'La variedad mas cultivada en el mundo, con un sabor suave y dulce.', 'Oscuro', 'Avinado, Especiadas, Acidos, Salados', 69.01, True),
+('Liberica', 'Una de las variedades de cafe, menos comun pero con un sabor distintivo.', 'Medio', 'Especiadas, Avinado, Nuez/chocolate, Dulces', 78.4, True),
+('Robusta', 'Mas fuerte y amargo, con un alto contenido de cafeina.', 'Medio', 'Terroso, Floral, Nuez/chocolate, Acidos', 69.03, False),
+('Arabica', 'La variedad mas cultivada en el mundo, con un sabor suave y dulce.', 'Medio', 'Especiadas, Avinado, Salados, Nuez/chocolate', 86.72, True),
+('Excelsa', 'Una de las variedades de cafe, con un perfil de sabor unico.', 'Medio', 'Frutales, Floral, Nuez/chocolate, Dulces', 86.7, False),
+('Arabica', 'La variedad mas cultivada en el mundo, con un sabor suave y dulce.', 'Oscuro', 'Terroso, Frutales, Salados, Nuez/chocolate', 74.04, True),
+('Robusta', 'Mas fuerte y amargo, con un alto contenido de cafeina.', 'Medio', 'Avinado, Frutales, Amargos, Acidos', 69.57, False),
+('Arabica', 'La variedad mas cultivada en el mundo, con un sabor suave y dulce.', 'Claro', 'Frutales, Terroso, Dulces, Acidos', 82.87, True),
+('Robusta', 'Mas fuerte y amargo, con un alto contenido de cafeina.', 'Claro', 'Frutales, Especiadas, Nuez/chocolate, Dulces', 87.66, False),
+('Arabica', 'La variedad mas cultivada en el mundo, con un sabor suave y dulce.', 'Medio', 'Frutales, Floral, Salados, Acidos', 81.82, True);
